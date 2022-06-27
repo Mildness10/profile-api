@@ -9,6 +9,7 @@ from rest_framework.routers import DefaultRouter
 
 router = DefaultRouter()
 router.register('profile', views.UserProfileViewset)
+router.register('feed', views.UserProfileFeedViewset)
 
 urlpatterns = [
     path('login/', views.UserLoginApiView.as_view()),
